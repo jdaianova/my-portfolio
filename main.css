@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.invisible {
+    display: none;
+}
+
+.green {
+    color: #14a76c;
+}
+
+.light-gray {
+    color: #747474;
+}
+
+.orange {
+    color: #ff652f;
+}
+
+.yellow {
+    color: #ffe400
+}
+
+@font-face {
+    font-family: Welcome;
+    src: url('fonts/Welcome.ttf');
+}
+
+@font-face {
+    font-family: Mariupol-Regular;
+    src: url('fonts/Mariupol/Mariupol-Regular.ttf');
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+body {
+    background-image: url('img/background-mobile2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #272727;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Mariupol-Regular;
+}
+
+.header {
+    background-color: rgba(5, 5, 5, 0.45);
+    border-bottom: 2px solid #050505;
+    box-shadow: 3px 3px 10px #050505;
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home img {
+    width: 60px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    flex: 1;
+}
+
+.section {
+    padding: 50px 40px 10px 40px;
+    box-shadow: 5px 10px 10px #050505;
+    text-transform: uppercase;
+    font-size: 25px;
+    z-index: 555;
+}
+
+.section-content {
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+.section-about-me {
+    border-bottom: 3px solid #14a76c;
+}
+
+.section-about-me-content {}
+
+.section-about-me-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.section-about-me-header-foto {}
+
+.section-about-me-header-info {
+    margin-left: 15px;
+}
+
+.section-about-me-header h1 {
+    font-size: 38px;
+    line-height: 1.0em;
+    color: #272727;
+    margin-bottom: 5px;
+}
+
+.section-about-me-header h2 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #272727;
+    background-color: #14a76c;
+    line-height: 0.5;
+}
+
+.section-about-me-header-text {
+    font-size: 20px;
+}
+
+.section-my-skills {
+    border-bottom: 3px solid #747474;
+}
+
+.section-my-skills-content-skill {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    font-size: 25px;
+    align-items: center;
+}
+
+.skill-logo img {
+    height: 30px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: white;
+}
+
+.skill-description {
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    line-height: 0.3em;
+    width: 100%;
+}
+
+.section-portfolio {
+    border-bottom: 3px solid #ff652f;
+}
+
+.section-portfolio-app {
+    border-bottom: 2px solid #ff652f;
+    margin-bottom: 20px;
+}
+
+.portfolio-app-img img {
+    width: 100%;
+}
+
+.section-contacts {
+    border-bottom: 3px solid #ffe400;
+}
+
+.footer {
+    background-color: rgba(5, 5, 5, 0.45);
+    padding: 20px 0px 20px 40px;
+}
