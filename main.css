@@ -171,13 +171,31 @@ body {
     border-bottom: 3px solid #ff652f;
 }
 
+.section-portfolio-content {
+    border-bottom: 3px solid #ff652f;
+}
+
+.section-portfolio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .section-portfolio-app {
+    width: 100%;
     border-bottom: 2px solid #ff652f;
     margin-bottom: 20px;
+    margin-right: 1%;
 }
 
 .portfolio-app-img img {
     width: 100%;
+}
+
+.portfolio-app-description {
+    margin-top: -30px;
+    text-align: center;
+    font-size: 25px;
 }
 
 .section-contacts {
