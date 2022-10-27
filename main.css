@@ -5,6 +5,10 @@
     border: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .invisible {
     display: none;
 }
@@ -163,7 +167,7 @@ body {
 .skill-description {
     margin-left: 10px;
     background-color: rgba(255, 255, 255, 0.3);
-    line-height: 0.3em;
+    line-height: 0.8em;
     width: 100%;
 }
 
@@ -171,9 +175,7 @@ body {
     border-bottom: 3px solid #ff652f;
 }
 
-.section-portfolio-content {
-    border-bottom: 3px solid #ff652f;
-}
+.section-portfolio-content {}
 
 .section-portfolio-container {
     display: flex;
@@ -182,24 +184,82 @@ body {
 }
 
 .section-portfolio-app {
-    width: 100%;
-    border-bottom: 2px solid #ff652f;
-    margin-bottom: 20px;
-    margin-right: 1%;
-}
-
-.portfolio-app-img img {
-    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
 }
 
 .portfolio-app-description {
-    margin-top: -30px;
     text-align: center;
     font-size: 25px;
+    color: #272727;
+}
+
+.portfolio-app-description h5 {
+    padding-top: 10px;
+    font-size: 28px;
+    color: black;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 701;
+}
+
+.portfolio-app-description::after {
+    content: ' ';
+    height: 10px;
+    background-color: #ff652f;
+    width: 300px;
+    display: block;
+    position: absolute;
+    top:18px;
+    z-index: 700;
+}
+
+.portfolio-app-img {
+    width: 100%;
+    border-bottom: 3px solid #272727;
+    margin-bottom: -35px;
+}
+
+.portfolio-link p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: black;
+    background-color: aliceblue;
+    z-index: 600;
 }
 
 .section-contacts {
     border-bottom: 3px solid #ffe400;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-contacts-content-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section-contacts-content-contact p {
+    font-size: 20px;
+    color: #272727;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-logo {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.contact-logo img {
+    width: 70%;
 }
 
 .footer {
