@@ -63,26 +63,21 @@ body {
     box-shadow: 3px 3px 10px #050505;
     display: flex;
     flex-direction: row;
-    padding: 0 20px;
     justify-content: space-between;
 }
 
-.logo {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+.logo, .home {
+    padding: 10px 40px;
 }
 
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo img {
+    height: 60px;
+    width: 60px;
+    z-index: 999;
 }
 
 .home img {
-    width: 60px;
+    height: 60px;
 }
 
 .sections {
@@ -149,12 +144,20 @@ body {
     border-bottom: 3px solid #747474;
 }
 
+.section-my-skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
 .section-my-skills-content-skill {
     display: flex;
     flex-direction: row;
     margin-bottom: 5px;
     font-size: 25px;
     align-items: center;
+    width: 100%;
 }
 
 .skill-logo img {
@@ -175,21 +178,24 @@ body {
     border-bottom: 3px solid #ff652f;
 }
 
-.section-portfolio-content {}
-
 .section-portfolio-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .section-portfolio-app {
     margin-bottom: 15px;
     position: relative;
+    width: 100%;
 }
 
 .portfolio-app-description {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
     color: #272727;
 }
@@ -231,14 +237,19 @@ body {
 
 .section-contacts {
     border-bottom: 3px solid #ffe400;
+}
+
+.section-contacts-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .section-contacts-content-contact {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .section-contacts-content-contact p {
@@ -264,5 +275,76 @@ body {
 
 .footer {
     background-color: rgba(5, 5, 5, 0.45);
-    padding: 20px 0px 20px 40px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+
+    .section-my-skills-content-skill {
+        width: 46%;
+        margin-right: 2%;
+    }
+
+    .section-portfolio-app {
+        width: 48%;
+        margin-right: 1%;
+    }
+
+    .section {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .section-contacts-content-contact {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+}
+
+@media screen and (min-width: 1201px) {
+
+    body {
+        background-image: url('img/background-big2.png');
+    }
+
+    .section-my-skills-content-skill {
+        width: 30%;
+        margin-right: 3%;
+    }
+
+    .section-portfolio-app {
+        width: 30%;
+        margin-right: 3%;
+    }
+
+    .section {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .section-contacts-content {
+        text-align: center;
+    }
+
+    .section-contacts-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .section-contacts-content-contact {
+        width: 40%;
+        margin-right: 1%;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 10px 0 10px 40px;
+        justify-content: center;
+    }
+
+    .section-contacts-content-contact p {
+        font-size: 28px;
+    }
+
 }
