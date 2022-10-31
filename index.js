@@ -7,11 +7,11 @@ gsap.to(".welcome-text-second-line", {
     ease: 'power1.in'
 });
 gsap.to(".welcome-button", { scale: 1.1, opacity: 1, delay: 4, duration: 1, repeat: -1, repeatDelay: 0.5 });
-gsap.from(".white", { y: 2000, duration: 1, delay: 5, });
-gsap.from(".yellow", { x: -2000, duration: 1, delay: 5, });
-gsap.from(".gray", { x: 2000, duration: 1, delay: 5, });
-gsap.from(".light-gray", { x: -2000, duration: 1, delay: 6, });
-gsap.from(".orange", { y: -2000, duration: 1, delay: 5, });
+gsap.from(".white", { y: '-100vh', duration: 1, delay: 5, });
+gsap.from(".yellow", { x: '-100vw', duration: 1, delay: 5, });
+gsap.from(".gray", { x: '-100vw', duration: 1, delay: 5, });
+gsap.from(".light-gray", { x: '-100vw', duration: 1, delay: 6, });
+gsap.from(".orange", { y: '-100vh', duration: 1, delay: 5, });
 
 
 document.querySelector('.welcome-button').addEventListener('click', () => {

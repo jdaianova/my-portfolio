@@ -116,7 +116,7 @@ body {
     background-color: #FFE400;
     bottom: 0;
     right: 0;
-    width: 300px;
+    width: 65vw;
     height: 3px;
     margin-bottom: -15px;
 }
@@ -125,7 +125,7 @@ body {
     background-color: #747474;
     bottom: 0;
     right: 0;
-    width: 300px;
+    width: 63vw;
     height: 2px;
     margin-bottom: -21px;
     margin-right: 20px;
@@ -135,7 +135,7 @@ body {
     background-color: #272727;
     top: 0;
     left: 0;
-    width: 300px;
+    width: 60vw;
     height: 1px;
     margin-top: -15px;
     margin-left: -10px;
@@ -146,6 +146,6 @@ body {
     top: 0;
     left: 0;
     width: 2px;
-    height: 50vh;
+    height: 43vh;
     margin-top: -15px;
 }
