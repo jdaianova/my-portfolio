@@ -67,17 +67,17 @@ body {
 }
 
 .logo, .home {
-    padding: 10px 40px;
+    padding: 20px 40px;
 }
 
 .logo img {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     z-index: 999;
 }
 
 .home img {
-    height: 60px;
+    height: 40px;
 }
 
 .sections {
@@ -93,6 +93,7 @@ body {
     text-transform: uppercase;
     font-size: 25px;
     z-index: 555;
+    cursor: pointer;
 }
 
 .section-content {
@@ -293,7 +294,6 @@ body {
 
     .section {
         text-align: center;
-        font-size: 30px;
     }
 
     .section-contacts-content-contact {
@@ -321,7 +321,7 @@ body {
 
     .section {
         text-align: center;
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .section-contacts-content {
